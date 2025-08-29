@@ -61,7 +61,7 @@ export default function Hero() {
         </div>
         <Slider />
       </div>
-      <div className="success-projects">
+      <div className="success-projects no-bg">
         <div className="success-projects-container">
           <button className="action-button">Блог</button>
           <h1 className="success-projects-container__title">Полезные статьи</h1>

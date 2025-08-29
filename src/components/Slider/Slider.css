@@ -12,8 +12,10 @@
     transition: transform 0.4s ease;
 }
 .slider-item {
-    width: 45%;
+    flex: 0 0 calc(100% / 2.2 - 12px); /* visible = 2.2 */
+    scroll-snap-align: start;
     margin-right: 12px;
+    width: 45%;
     background: #fff;
     border-radius: 16px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);

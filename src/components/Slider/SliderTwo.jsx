@@ -45,7 +45,12 @@ export default function SliderTwo() {
     const prev = () => {
       if (index > 0) setIndex(prev => prev - 1);
     };
+    
+    const itemWidth = trackRef.current?.querySelector(".slider-item")?.offsetWidth || 0;
+    const gap = 12; // или вычислить динамически
   
+    const maxIndex = Math.max(0, data.length - Math.floor(visible));
+    if (index > maxIndex) setIndex(maxIndex);
     // drag
     const onMouseDown = (e) => {
       pos.current = {
@@ -75,7 +80,7 @@ export default function SliderTwo() {
         >
           <div
             className="slider-track"
-            style={{ transform: `translateX(-${index * 520}px)` }}
+            style={{ transform: `translateX(-${index * (itemWidth + gap)}px)` }}
           >
             {data.map((item, i) => (
               <div key={i} className="slider-item">
