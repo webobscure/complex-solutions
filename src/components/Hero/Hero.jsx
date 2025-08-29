@@ -5,10 +5,11 @@ import complex from "../../assets/complex.png";
 import computer from "../../assets/computer.svg";
 import safe from "../../assets/safe.svg";
 import vpn from "../../assets/vpn.svg";
-
 import Button from "../elements/Button/Button";
 import Card_hero from "./Card_hero";
 import Container from "../elements/Container/Container";
+import Slider from "../Slider/Slider";
+import SliderTwo from "../Slider/SliderTwo";
 
 export default function Hero() {
   return (
@@ -40,16 +41,38 @@ export default function Hero() {
           imgAlt="safe"
           title="Информационная безопасность"
         />
-        <Card_hero
-          imgSrc={vpn}
-          imgAlt="vpn"
-          title="VPN и удалённый доступ"
-        />
+        <Card_hero imgSrc={vpn} imgAlt="vpn" title="VPN и удалённый доступ" />
         <Card_hero
           imgSrc={automate}
           imgAlt="automate"
           title="Автоматизация и интеграции"
         />
+      </div>
+      <div className="success-projects">
+        <div className="success-projects-container">
+          <button className="action-button">Кейсы</button>
+          <h1 className="success-projects-container__title">
+            Успешные проекты наших клиентов
+          </h1>
+          <p className="success-projects-container__descr">
+            Реальные примеры внедрения IT-решений, которые помогли компаниям<br/>
+            повысить безопасность и эффективность работы
+          </p>
+        </div>
+        <Slider />
+      </div>
+      <div className="success-projects">
+        <div className="success-projects-container">
+          <button className="action-button">Блог</button>
+          <h1 className="success-projects-container__title">Полезные статьи</h1>
+          <p className="success-projects-container__descr">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor<br/> incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud<br/> exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+        </div>
+        <SliderTwo />
       </div>
     </Container>
   );

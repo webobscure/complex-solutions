@@ -17,3 +17,14 @@
   font-weight: 600;
   line-height: 120%;
 }
+@media(max-width: 485px) {
+ 
+  .card {
+    width: 100%;
+    flex-direction: row;
+    justify-content: flex-start;
+    height: 64px;
+    gap: 12px;
+    align-items: center;
+  }
+}

@@ -24,3 +24,49 @@
   margin: 0 auto;
   justify-content: space-between;
 }
+
+.success-projects-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.success-projects-container__title {
+  margin-top: 24px;
+  font-size: 48px;
+  font-weight: 400;
+}
+
+.success-projects-container__descr {
+  font-size: 16px;
+  color: #6A757C;
+  margin-top: 24px;
+  text-align: center;
+}
+
+.success-projects .action-button {
+  width: 73px;
+  height: 30px;
+  padding: 4px 12px;
+  margin-top: 120px;
+}
+
+@media(max-width: 768px) {
+  .success-projects-container__title {
+    font-size: 5vw;
+  }
+  .success-projects .action-button {
+    margin-top: 80px;
+  }
+}
+
+@media(max-width: 485px) {
+  .complex-solutions-block {
+    flex-direction: column;
+  }
+  .cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
