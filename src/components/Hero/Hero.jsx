@@ -1,8 +1,8 @@
-import complex from "./../assets/complex.png";
-import computer from "./../assets/computer.png";
-import safe from "./../assets/safe.png";
-import network from "./../assets/network.png";
-import automate from "./../assets/automate.png";
+import complex from "../../assets/complex.png";
+import computer from "../../assets/computer.svg";
+import safe from "../../assets/safe.svg";
+import vpn from "../../assets/vpn.svg";
+import automate from "../../assets/automate.svg";
 
 export default function Hero() {
   return (
@@ -25,19 +25,19 @@ export default function Hero() {
       </div>
       <div className="cards">
         <div className="card">
-          <img src={computer} alt="" />
+          <img src={computer} alt="computer" />
           <h2>Разработка корпоративных систем</h2>
         </div>
         <div className="card">
-          <img src={safe} alt="" />
+          <img src={safe} alt="safe" />
           <h2>Информационная безопасность</h2>
         </div>
         <div className="card">
-          <img src={network} alt="" />
+          <img src={vpn} alt="vpn" />
           <h2>VPN и удалённый доступ</h2>
         </div>
         <div className="card">
-          <img src={automate} alt="" />
+          <img src={automate} alt="automate" />
           <h2>Автоматизация и интеграции</h2>
         </div>
       </div>
