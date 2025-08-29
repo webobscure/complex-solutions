@@ -13,46 +13,48 @@ import Container from "../elements/Container/Container";
 export default function Hero() {
 	return (
 		<Container>
-			<div className="complex-solutions-block">
-				<div className="complex-solutions-block__left">
-					<h1 className="complex-solutions-block__left-title">
-						Комплексные IT-решения
-						<br /> для бизнеса в России
-					</h1>
+			<section className="hero-wrapper">
+				<div className="hero-block">
+					<div className="hero-block__left">
+						<h1 className="hero-block__left-title">
+							Комплексные IT-решения
+							<br /> для бизнеса в России
+						</h1>
 
-					<p className="complex-solutions-block__left-descr">
-						Разработка ПО, кибербезопасность, VPN, автоматизация
-						бизнес-процессов
-					</p>
+						<p className="hero-block__left-descr">
+							Разработка ПО, кибербезопасность, VPN, автоматизация
+							бизнес-процессов
+						</p>
 
-					<Button />
+						<Button />
+					</div>
+
+					<div className="hero-block__right">
+						<img src={complex} />
+					</div>
 				</div>
 
-				<div className="complex-solutions-block__right">
-					<img src={complex} />
-				</div>
-			</div>
+				<section className="hero-cards">
+					<Card_hero
+						imgSrc={computer}
+						imgAlt="computer"
+						title="Разработка корпоративных систем"
+					/>
 
-			<section className="cards">
-				<Card_hero
-					imgSrc={computer}
-					imgAlt="computer"
-					title="Разработка корпоративных систем"
-				/>
+					<Card_hero
+						imgSrc={safe}
+						imgAlt="safe"
+						title="Информационная безопасность"
+					/>
 
-				<Card_hero
-					imgSrc={safe}
-					imgAlt="safe"
-					title="Информационная безопасность"
-				/>
+					<Card_hero imgSrc={vpn} imgAlt="vpn" title="VPN и удалённый доступ" />
 
-				<Card_hero imgSrc={vpn} imgAlt="vpn" title="VPN и удалённый доступ" />
-
-				<Card_hero
-					imgSrc={automate}
-					imgAlt="automate"
-					title="Автоматизация и интеграции"
-				/>
+					<Card_hero
+						imgSrc={automate}
+						imgAlt="automate"
+						title="Автоматизация и интеграции"
+					/>
+				</section>
 			</section>
 		</Container>
 	);
