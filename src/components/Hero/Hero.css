@@ -24,12 +24,15 @@
   margin: 0 auto;
   justify-content: space-between;
 }
+
 .success-projects {
   background: #F7F7F7;
 }
+
 .no-bg {
   background: #fff;
 }
+
 .success-projects-container {
   display: flex;
   justify-content: center;

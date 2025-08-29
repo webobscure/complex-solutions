@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
 
 import "./Header.css";
 import logo from "../../assets/dlm-logo.svg";
@@ -13,7 +12,7 @@ export default function Header() {
     <header className="header">
       <Container>
         {/* Десктопное меню */}
-        <div className="header-container desktop">
+        <section className="header-container desktop">
           <div className="header-container_item">
             <img src={logo} alt="dlm-agency" />
           </div>
@@ -27,10 +26,10 @@ export default function Header() {
           <div className="header-container_item">
             <Button />
           </div>
-        </div>
+        </section>
 
         {/* Мобильное меню */}
-        <div className="header-container mobile">
+        <section className="header-container mobile">
           <div className="header-container_item">
             <img src={logo} alt="dlm-agency" />
           </div>
@@ -42,18 +41,18 @@ export default function Header() {
             <span></span>
             <span></span>
           </div>
-        </div>
+        </section>
       </Container>
 
       {/* Выпадающее меню снизу */}
-      <div className={`mobile-menu-bottom ${menuOpen ? "open" : ""}`}>
+      <section className={`mobile-menu-bottom ${menuOpen ? "open" : ""}`}>
         <a className="mobile-menu_bottom_link">О компании</a>
         <a className="mobile-menu_bottom_link">Услуги</a>
         <a className="mobile-menu_bottom_link" href="#cases">Кейсы</a>
         <a className="mobile-menu_bottom_link" href="#blog">Блог</a>
         <a className="mobile-menu_bottom_link">Контакты</a>
         <Button />
-      </div>
+      </section>
     </header>
   );
 }
