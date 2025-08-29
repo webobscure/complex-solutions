@@ -74,4 +74,7 @@
     flex-direction: row;
     flex-wrap: wrap;
   }
+  .complex-solutions-block__left-title {
+    font-size: 44px;
+  }
 }

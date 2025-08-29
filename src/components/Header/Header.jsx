@@ -18,11 +18,11 @@ export default function Header() {
             <img src={logo} alt="dlm-agency" />
           </div>
           <div className="header-container_item nav-links">
-            <Link className="header-container_item-link">О компании</Link>
-            <Link className="header-container_item-link">Услуги</Link>
-            <Link className="header-container_item-link">Кейсы</Link>
-            <Link className="header-container_item-link">Блог</Link>
-            <Link className="header-container_item-link">Контакты</Link>
+            <a className="header-container_item-link">О компании</a>
+            <a className="header-container_item-link" >Услуги</a>
+            <a className="header-container_item-link" href="#cases">Кейсы</a>
+            <a className="header-container_item-link" href="#blog">Блог</a>
+            <a className="header-container_item-link">Контакты</a>
           </div>
           <div className="header-container_item">
             <Button />
@@ -47,11 +47,11 @@ export default function Header() {
 
       {/* Выпадающее меню снизу */}
       <div className={`mobile-menu-bottom ${menuOpen ? "open" : ""}`}>
-        <Link className="mobile-menu_bottom_link">О компании</Link>
-        <Link className="mobile-menu_bottom_link">Услуги</Link>
-        <Link className="mobile-menu_bottom_link">Кейсы</Link>
-        <Link className="mobile-menu_bottom_link">Блог</Link>
-        <Link className="mobile-menu_bottom_link">Контакты</Link>
+        <a className="mobile-menu_bottom_link">О компании</a>
+        <a className="mobile-menu_bottom_link">Услуги</a>
+        <a className="mobile-menu_bottom_link" href="#cases">Кейсы</a>
+        <a className="mobile-menu_bottom_link" href="#blog">Блог</a>
+        <a className="mobile-menu_bottom_link">Контакты</a>
         <Button />
       </div>
     </header>

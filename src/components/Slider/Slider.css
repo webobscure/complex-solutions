@@ -201,5 +201,8 @@
     .slider-item, .slider-out-images .slider-item {
         width: 100%;
     }
+    .slider-item {
+        flex: none;
+    }
     
 }
