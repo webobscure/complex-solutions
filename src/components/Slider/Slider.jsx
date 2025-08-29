@@ -28,7 +28,8 @@ export default function Slider() {
   const [visible, setVisible] = useState(2.2);
   const trackRef = useRef(null);
   const pos = useRef({ startX: 0, scrollLeft: 0, isDown: false });
-
+  const activeIndicator =
+    index >= data.length - visible ? data.length - 1 : index;
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth < 600) setVisible(1);
@@ -41,13 +42,14 @@ export default function Slider() {
   }, []);
 
   const next = () => {
-    if (index < data.length - visible) setIndex(prev => prev + 1);
+    if (index < data.length - visible) setIndex((prev) => prev + 1);
   };
   const prev = () => {
-    if (index > 0) setIndex(prev => prev - 1);
+    if (index > 0) setIndex((prev) => prev - 1);
   };
-  
-  const itemWidth = trackRef.current?.querySelector(".slider-item")?.offsetWidth || 0;
+
+  const itemWidth =
+    trackRef.current?.querySelector(".slider-item")?.offsetWidth || 0;
   const gap = 12; // или вычислить динамически
 
   const maxIndex = Math.max(0, data.length - Math.floor(visible));
@@ -109,7 +111,9 @@ export default function Slider() {
           {data.map((_, i) => (
             <div
               key={i}
-              className={`progress-segment ${i === index ? "active" : ""}`}
+              className={`progress-segment ${
+                i === activeIndicator ? "active" : ""
+              }`}
             />
           ))}
         </div>
