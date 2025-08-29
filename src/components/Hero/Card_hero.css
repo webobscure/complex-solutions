@@ -1,0 +1,19 @@
+.card {
+  background: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  height: 160px;
+  padding: 16px;
+  justify-content: space-between;
+  border-radius: 16px;
+}
+.card img {
+  width: 32px;
+  height: 32px;
+}
+.card h2 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 120%;
+}
