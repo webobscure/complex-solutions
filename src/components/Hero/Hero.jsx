@@ -1,3 +1,5 @@
+import "./Hero.css";
+
 import automate from "../../assets/automate.svg";
 import complex from "../../assets/complex.png";
 import computer from "../../assets/computer.svg";
