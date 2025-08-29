@@ -7,6 +7,7 @@ import safe from "../../assets/safe.svg";
 import vpn from "../../assets/vpn.svg";
 
 import Button from "../elements/Button/Button";
+import Card_hero from "./Card_hero";
 import Container from "../elements/Container/Container";
 
 export default function Hero() {
@@ -29,22 +30,26 @@ export default function Hero() {
         </div>
       </div>
       <div className="cards">
-        <div className="card">
-          <img src={computer} alt="computer" />
-          <h2>Разработка корпоративных систем</h2>
-        </div>
-        <div className="card">
-          <img src={safe} alt="safe" />
-          <h2>Информационная безопасность</h2>
-        </div>
-        <div className="card">
-          <img src={vpn} alt="vpn" />
-          <h2>VPN и удалённый доступ</h2>
-        </div>
-        <div className="card">
-          <img src={automate} alt="automate" />
-          <h2>Автоматизация и интеграции</h2>
-        </div>
+        <Card_hero
+          imgSrc={computer}
+          imgAlt="computer"
+          title="Разработка корпоративных систем"
+        />
+        <Card_hero
+          imgSrc={safe}
+          imgAlt="safe"
+          title="Информационная безопасность"
+        />
+        <Card_hero
+          imgSrc={vpn}
+          imgAlt="vpn"
+          title="VPN и удалённый доступ"
+        />
+        <Card_hero
+          imgSrc={automate}
+          imgAlt="automate"
+          title="Автоматизация и интеграции"
+        />
       </div>
     </Container>
   );
