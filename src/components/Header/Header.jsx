@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 
 import "./Header.css";
+import logo from "../../assets/dlm-logo.svg";
 
 import Button from "../elements/Button/Button";
 import Container from "../elements/Container/Container";
@@ -10,7 +11,9 @@ export default function Header() {
     <header className="header">
       <Container>
         <div className="header-container">
-          <div className="header-container_item">Logo</div>
+          <div className="header-container_item">
+            <img src={logo} logo="dlm-agency" />
+          </div>
           <div className="header-container_item">
             <Link className="header-container_item-link">О компании</Link>
             <Link className="header-container_item-link">Услуги</Link>
