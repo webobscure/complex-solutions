@@ -1,11 +1,12 @@
+import "./Cases.css";
+
 import Container from "../elements/Container/Container";
 import ContainerHeader from "../elements/ContainerHeader/ContainerHeader";
 import Slider from "../Slider/Slider";
-import "./Cases.css";
 
 export default function Cases() {
 	return (
-		<div className="success-projects" id="cases">
+		<div id="cases">
 			<Container>
 				<ContainerHeader
 					name="Кейсы"

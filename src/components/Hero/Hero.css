@@ -1,83 +1,79 @@
 .complex-solutions-block {
-  display: flex;
-  flex-direction: row;
-  margin-top: 24px;
-  justify-content: space-between;
+	display: flex;
+	flex-direction: row;
+	margin-top: 24px;
+	justify-content: space-between;
 }
 
 .complex-solutions-block__left-title {
-  font-size: 56px;
-  font-weight: 400;
+	font-size: 56px;
+	font-weight: 400;
 }
 
 .complex-solutions-block__left-descr {
-  font-size: 16px;
-  color: #6a757c;
-  margin-top: 24px;
-  margin-bottom: 48px;
+	font-size: 16px;
+	color: #6a757c;
+	margin-top: 24px;
+	margin-bottom: 48px;
 }
 
 .cards {
-  display: flex;
-  flex-direction: row;
-  gap: 24px;
-  margin: 0 auto;
-  justify-content: space-between;
+	display: flex;
+	flex-direction: row;
+	gap: 24px;
+	margin: 0 auto;
+	justify-content: space-between;
 }
 
 .success-projects {
-  background: #F7F7F7;
-}
-
-.no-bg {
-  background: #fff;
+	background: #f7f7f7;
 }
 
 .success-projects-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
 
 .success-projects-container__title {
-  margin-top: 24px;
-  font-size: 48px;
-  font-weight: 400;
+	margin-top: 24px;
+	font-size: 48px;
+	font-weight: 400;
 }
 
 .success-projects-container__descr {
-  font-size: 16px;
-  color: #6A757C;
-  margin-top: 24px;
-  text-align: center;
+	font-size: 16px;
+	color: #6a757c;
+	margin-top: 24px;
+	text-align: center;
 }
 
 .success-projects .action-button {
-  width: 73px;
-  height: 30px;
-  padding: 4px 12px;
-  margin-top: 120px;
+	width: 73px;
+	height: 30px;
+	padding: 4px 12px;
+	margin-top: 120px;
 }
 
-@media(max-width: 768px) {
-  .success-projects-container__title {
-    font-size: 5vw;
-  }
-  .success-projects .action-button {
-    margin-top: 80px;
-  }
+@media (max-width: 768px) {
+	.success-projects-container__title {
+		font-size: 5vw;
+	}
+	.success-projects .action-button {
+		margin-top: 80px;
+	}
 }
 
-@media(max-width: 485px) {
-  .complex-solutions-block {
-    flex-direction: column;
-  }
-  .cards {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  .complex-solutions-block__left-title {
-    font-size: 44px;
-  }
+@media (max-width: 485px) {
+	.complex-solutions-block {
+		flex-direction: column;
+	}
+	.cards {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	.complex-solutions-block__left-title {
+		font-size: 44px;
+	}
 }
