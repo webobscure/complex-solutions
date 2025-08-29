@@ -1,5 +1,9 @@
 import { Link } from "react-router-dom";
 
+import "./Header.css";
+
+import Button from "../elements/Button/Button";
+
 export default function Header() {
   return (
     <>
@@ -18,9 +22,7 @@ export default function Header() {
 
             </div>
             <div className="header-container_item">
-                <button className="action-button">
-                    Обсудить проект
-                </button>
+                <Button />
             </div>
           </div>
         </div>

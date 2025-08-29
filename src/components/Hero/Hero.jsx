@@ -1,8 +1,10 @@
+import automate from "../../assets/automate.svg";
 import complex from "../../assets/complex.png";
 import computer from "../../assets/computer.svg";
 import safe from "../../assets/safe.svg";
 import vpn from "../../assets/vpn.svg";
-import automate from "../../assets/automate.svg";
+
+import Button from "../elements/Button/Button";
 
 export default function Hero() {
   return (
@@ -17,7 +19,7 @@ export default function Hero() {
             Разработка ПО, кибербезопасность, VPN, автоматизация
             бизнес-процессов
           </p>
-          <button className="action-button">Обсудить проект</button>
+          <Button />
         </div>
         <div className="complex-solutions-block__right">
           <img src={complex} />
