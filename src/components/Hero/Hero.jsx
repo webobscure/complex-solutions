@@ -5,10 +5,11 @@ import safe from "../../assets/safe.svg";
 import vpn from "../../assets/vpn.svg";
 
 import Button from "../elements/Button/Button";
+import Container from "../elements/Container/Container";
 
 export default function Hero() {
   return (
-    <section className="container">
+    <Container>
       <div className="complex-solutions-block">
         <div className="complex-solutions-block__left">
           <h1 className="complex-solutions-block__left-title">
@@ -43,6 +44,6 @@ export default function Hero() {
           <h2>Автоматизация и интеграции</h2>
         </div>
       </div>
-    </section>
+    </Container>
   );
 }
