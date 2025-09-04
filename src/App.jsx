@@ -14,12 +14,10 @@ function App() {
 			<Header />
 			<Hero />
 			<About />
-			{/* about */}
 			{/* services */}
 			<Cases />
 			<Blog />
 			{/* faq */}
-			{/* form */}
 			<FeedbackForm />
 			<Footer />
 		</>
