@@ -26,7 +26,7 @@
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-@media (max-width: 425px) {
+@media (max-width: 485px) {
 	.services__card-container {
 		grid-template-columns: 1fr;
 	}
