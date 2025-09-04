@@ -1,0 +1,16 @@
+.about__card-container {
+	display: flex;
+	gap: 2rem;
+	margin-top: 5rem;
+}
+
+.about__card-container > * {
+	flex: 1; /* Равномерное распределение пространства */
+	min-width: 0;
+}
+
+@media (max-width: 425px) {
+	.about__card-container {
+		flex-direction: column;
+	}
+}

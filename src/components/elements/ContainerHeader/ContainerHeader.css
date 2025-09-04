@@ -6,26 +6,23 @@
 }
 
 .container-header__name {
-	background: #34b1fe;
-	border-radius: 8px;
-	width: 174px;
-	height: 48px;
-	padding: 0 24px;
-	color: #fff;
-	border: 1px solid #34b1fe;
-	cursor: default;
+	text-align: center;
 	font-size: 16px;
-	width: 73px;
-	height: 30px;
+	color: #fff;
+	background: #34b1fe;
+	border: 1px solid #34b1fe;
+	border-radius: 8px;
+	cursor: default;
 	padding: 4px 12px;
 	margin-top: 120px;
-	text-align: center;
 }
 
 .container-header__title {
+	text-align: center;
 	margin-top: 24px;
 	font-size: 48px;
 	font-weight: 400;
+	white-space: pre-wrap;
 }
 
 .container-header__description {
@@ -35,4 +32,10 @@
 	color: #6a757c;
 	margin-top: 24px;
 	text-align: center;
+}
+
+@media (max-width: 425px) {
+	.container-header__title {
+		font-size: 32px;
+	}
 }
