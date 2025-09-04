@@ -2,15 +2,20 @@
 	display: flex;
 	gap: 2rem;
 	margin-top: 5rem;
+	padding-bottom: 7rem;
 }
 
 .about__card-container > * {
 	flex: 1; /* Равномерное распределение пространства */
 	min-width: 0;
 }
+#about {
+	background: #f7f7f7;
+}
 
 @media (max-width: 425px) {
 	.about__card-container {
 		flex-direction: column;
 	}
+	
 }

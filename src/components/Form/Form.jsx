@@ -71,7 +71,7 @@ const FeedbackForm = () => {
 
   return (
 
-    <div className="feedback-container" id="action">
+    <div className="feedback-container waves" id="action">
         <ContainerHeader
 					name="Форма обратной связи"
 					title="Свяжитесь с нами"
