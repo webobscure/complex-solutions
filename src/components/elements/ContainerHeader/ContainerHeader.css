@@ -36,3 +36,10 @@
 	margin-top: 24px;
 	text-align: center;
 }
+@media(max-width:485px) {
+   
+    .container-header__title {
+        font-size: 39px;
+		text-align: center;
+    }
+}
