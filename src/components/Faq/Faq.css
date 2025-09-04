@@ -29,11 +29,13 @@
   padding: 15px;
   cursor: pointer;
   text-align: left;
+	color: #071924;
 }
 
 .faq-icon {
   font-size: 20px;
   transition: transform 0.3s ease;
+	color: #071924;
 }
 
 /* контейнер для ответа */
