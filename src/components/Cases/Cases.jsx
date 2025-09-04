@@ -6,7 +6,7 @@ import Slider from "../Slider/Slider";
 
 export default function Cases() {
 	return (
-		<div id="cases">
+		<div id="cases" className="waves">
 			<Container>
 				<ContainerHeader
 					name="Кейсы"

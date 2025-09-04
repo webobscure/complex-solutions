@@ -6,9 +6,11 @@ import Card from "../elements/Card/Card";
 
 export default function About() {
 	return (
-		<Container>
+		<div id="about" className="waves">
+			<Container >
 			<ContainerHeader
 				className="about-container"
+				
 				name="О компании"
 				title={
 					<>
@@ -23,6 +25,7 @@ export default function About() {
 					theme="dark"
 					title="Соответствие российскому законодательству"
 					description="Все решения соответствуют требованиям 152-ФЗ, ФСТЭК и ФСБ"
+					
 				/>
 				
 				<Card
@@ -38,5 +41,6 @@ export default function About() {
 				/>
 			</section>
 		</Container>
+		</div>
 	);
 }
