@@ -34,7 +34,7 @@ export default function Faq() {
 	];
 
 	return (
-		<section className="faq-wrapper">
+		<section className="faq-wrapper" id="faq">
 			<Container>
 				<ContainerHeader
 					className="faq-container"

@@ -18,10 +18,10 @@ export default function Header() {
           </div>
           <div className="header-container_item nav-links">
             <a className="header-container_item-link" href="#about">О компании</a>
-            <a className="header-container_item-link" >Услуги</a>
+            <a className="header-container_item-link" href="#services">Услуги</a>
             <a className="header-container_item-link" href="#cases">Кейсы</a>
             <a className="header-container_item-link" href="#blog">Блог</a>
-            <a className="header-container_item-link">Контакты</a>
+            <a className="header-container_item-link" href="#faq">Контакты</a>
           </div>
           <div className="header-container_item">
             <Button  />
