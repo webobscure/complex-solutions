@@ -8,6 +8,7 @@ import Blog from "./components/Blog/Blog";
 import About from "./components/About/About";
 import FeedbackForm from "./components/Form/Form";
 import Services from "./components/Services/Services";
+import Faq from "./components/Faq/Faq";
 
 function App() {
 	return (
@@ -18,7 +19,7 @@ function App() {
 			<Services />
 			<Cases />
 			<Blog />
-			{/* faq */}
+			<Faq />
 			<FeedbackForm />
 			<Footer />
 		</>
