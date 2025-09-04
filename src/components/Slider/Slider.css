@@ -248,3 +248,13 @@
     }
     
 }
+
+@media(max-width: 320px) {
+    .slider-progress {
+        flex-wrap: wrap;
+        gap: .7rem;
+    }
+    .slider-out-images .slider-track {
+        gap: 0;
+    }
+}
