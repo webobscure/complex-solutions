@@ -1,0 +1,220 @@
+.feedback-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('../../assets/bg.png') center no-repeat ;
+    background-size: cover;
+    background-color: #071924;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    flex-direction: column;
+  }
+  .feedback-container .container-header__name {
+    width: 193px;
+    height: 30px;
+    background-color: #fff;
+    color: #071924;
+  }
+  .feedback-container .container-header__title{
+    color: #fff;
+  }
+  .feedback-container .container-header__description {
+    color: #838C91;
+  }
+  .feedback-form {
+    border-radius: 12px;
+    padding: 40px;
+    width: 100%;
+    max-width: 657px;
+    animation: fadeIn 0.8s ease-out;
+    margin-top: 64px;
+    margin-bottom: 120px;
+  }
+  
+  .form-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  .form-subtitle {
+    font-size: 16px;
+    color: #7f8c8d;
+    text-align: center;
+    margin-bottom: 30px;
+    line-height: 1.5;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: slideIn 0.5s ease-out forwards;
+  }
+  
+  .form-group:nth-child(1) { animation-delay: 0.2s; }
+  .form-group:nth-child(2) { animation-delay: 0.3s; }
+  .form-group:nth-child(3) { animation-delay: 0.4s; }
+  .form-group:nth-child(4) { animation-delay: 0.5s; }
+  .form-group:nth-child(5) { animation-delay: 0.6s; }
+  
+  .form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    color: #2c3e50;
+    margin-bottom: 8px;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 14px 16px;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    border: 1px solid #071924;
+    background: #FFFFFF26;
+    color: #838C91;
+  }
+
+  .form-group input::placeholder, 
+  .form-group textarea::placeholder {
+      color: #838C91;
+      opacity: 0.8;
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+  }
+  
+  .form-group input::placeholder,
+  .form-group textarea::placeholder {
+    color: #bbb;
+  }
+  
+  .checkbox-group {
+    display: flex;
+    align-items: center;
+    margin: 25px 0;
+    opacity: 0;
+    animation: fadeIn 0.5s ease-out 0.8s forwards;
+    justify-content: center;
+  }
+  
+  .checkbox-group input {
+    margin-right: 10px;
+    margin-top: 3px;
+  }
+  
+  .checkbox-group label {
+    font-size: 14px;
+    color: #7f8c8d;
+    line-height: 1.5;
+    font-weight: normal;
+    cursor: pointer;
+  }
+  
+  .submit-btn {
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 16px;
+    font-size: 16px;
+    font-weight: 600;
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    opacity: 0;
+    animation: fadeIn 0.5s ease-out 0.9s forwards;
+  }
+  
+  .submit-btn:hover {
+    background: #2980b9;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
+  }
+  
+  .submit-btn:active {
+    transform: translateY(0);
+  }
+  
+  .success-message {
+    text-align: center;
+    padding: 30px 0;
+    animation: fadeIn 0.5s ease-out;
+  }
+  
+  .success-icon {
+    width: 60px;
+    height: 60px;
+    background: #2ecc71;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    margin: 0 auto 20px;
+    animation: scaleIn 0.5s ease-out;
+  }
+  
+  .success-message h2 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+  }
+  
+  .success-message p {
+    color: #7f8c8d;
+  }
+  
+  /* Анимации */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes scaleIn {
+    from {
+      transform: scale(0);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+  
+  /* Адаптивность */
+  @media (max-width: 576px) {
+    .feedback-form {
+      padding: 25px;
+    }
+    
+    .form-title {
+      font-size: 24px;
+    }
+    
+    .form-subtitle {
+      font-size: 14px;
+    }
+  }

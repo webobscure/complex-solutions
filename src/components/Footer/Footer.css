@@ -44,13 +44,20 @@
     text-align: left;
     width: 1024px;
 }
-
+@media(max-width: 1024px) {
+    .footer-policy {
+        width: 100%;
+    }
+}
 @media(max-width:485px) {
     .footer-block {
         flex-direction: column;
         gap: 44px;
     }
-    .footer-container span, .action-button {
+    .footer-container span, .action-button, .footer-policy {
         width: 100%;
+    }
+    .container-header__title {
+        font-size: 39px;
     }
 }

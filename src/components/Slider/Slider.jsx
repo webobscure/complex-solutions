@@ -95,9 +95,9 @@ export default function Slider() {
 								<div className="slider-icon">Название компании</div>
 								<h2>{item.title}</h2>
 								<p>{item.desc}</p>
-								<button className="slider-action">
+								{/* <button className="slider-action">
 									<img src={arrow} alt="→" />
-								</button>
+								</button> */}
 							</div>
 						</div>
 					))}
@@ -121,14 +121,12 @@ export default function Slider() {
 				{/* стрелки */}
 				<div className="slider-controls">
 					<button className="footer-btn" onClick={prev} disabled={index === 0}>
-						‹
 					</button>
 					<button
 						className="footer-btn"
 						onClick={next}
 						disabled={index >= data.length - visible}
 					>
-						›
 					</button>
 				</div>
 			</div>

@@ -49,3 +49,8 @@
 		font-size: 44px;
 	}
 }
+@media( max-width: 375px) {
+	.hero-block__right img {
+		width: 100%;
+	}
+}
