@@ -18,5 +18,22 @@
 }
 
 .card-theme-dark_description {
-	opacity: .6;
+	opacity: 0.6;
+}
+
+.card-theme-light {
+	background-color: #f7f7f7;
+	color: #6A757C;
+}
+
+.card-theme-light_image {
+	margin-bottom: 1rem;
+}
+
+.card-theme-light_title {
+	color: #071924;
+}
+
+.card-theme-light_description {
+	color: #6A757C;
 }
