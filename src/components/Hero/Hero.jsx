@@ -13,7 +13,7 @@ import Container from "../elements/Container/Container";
 export default function Hero() {
 	return (
 		<Container>
-			<section className="hero-wrapper">
+			<section className="hero-wrapper" id="about">
 				<div className="hero-block">
 					<div className="hero-block__left">
 						<h1 className="hero-block__left-title">

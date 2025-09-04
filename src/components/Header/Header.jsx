@@ -17,14 +17,14 @@ export default function Header() {
             <img src={logo} alt="dlm-agency" />
           </div>
           <div className="header-container_item nav-links">
-            <a className="header-container_item-link">О компании</a>
+            <a className="header-container_item-link" href="#about">О компании</a>
             <a className="header-container_item-link" >Услуги</a>
             <a className="header-container_item-link" href="#cases">Кейсы</a>
             <a className="header-container_item-link" href="#blog">Блог</a>
             <a className="header-container_item-link">Контакты</a>
           </div>
           <div className="header-container_item">
-            <Button />
+            <Button  />
           </div>
         </section>
 

@@ -50,7 +50,8 @@
         flex-direction: column;
         gap: 44px;
     }
-    .footer-container span, .action-button {
+    .footer-container span, .action-button, .footer-policy {
         width: 100%;
     }
+    
 }

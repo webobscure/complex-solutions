@@ -119,14 +119,12 @@ export default function SliderTwo() {
         {/* стрелки */}
         <div className="slider-controls">
           <button className="footer-btn" onClick={prev} disabled={index === 0}>
-            ‹
           </button>
           <button
             className="footer-btn"
             onClick={next}
             disabled={index >= data.length - visible}
           >
-            ›
           </button>
         </div>
       </div>
