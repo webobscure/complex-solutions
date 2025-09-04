@@ -7,6 +7,7 @@ import Cases from "./components/Cases/Cases";
 import Blog from "./components/Blog/Blog";
 import About from "./components/About/About";
 import FeedbackForm from "./components/Form/Form";
+import Services from "./components/Services/Services";
 
 function App() {
 	return (
@@ -14,7 +15,7 @@ function App() {
 			<Header />
 			<Hero />
 			<About />
-			{/* services */}
+			<Services />
 			<Cases />
 			<Blog />
 			{/* faq */}

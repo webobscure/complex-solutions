@@ -7,12 +7,14 @@ export default function Card({
 	title,
 	description,
 	theme = "light",
+	children,
 }) {
 	return (
 		<section className={`card-container ${className} card-theme-${theme}`}>
 			<img src={imgSrc} alt="logo" className={`card-theme-${theme}_image`} />
 			<p className={`card-theme-${theme}_title`}>{title}</p>
 			<p className={`card-theme-${theme}_description`}>{description}</p>
+			{children}
 		</section>
 	);
 }
