@@ -56,19 +56,19 @@ export default function Header() {
 
       {/* Выпадающее меню снизу */}
       <section className={`mobile-menu-bottom ${menuOpen ? "open" : ""}`}>
-        <a className="mobile-menu_bottom_link" href="#about">
+        <a className="mobile-menu_bottom_link" href="#about" onClick={setMenuOpen(false)}>
           О компании
         </a>
-        <a className="mobile-menu_bottom_link" href="#services">
+        <a className="mobile-menu_bottom_link" href="#services" onClick={setMenuOpen(false)}>
           Услуги
         </a>
-        <a className="mobile-menu_bottom_link" href="#cases">
+        <a className="mobile-menu_bottom_link" href="#cases" onClick={setMenuOpen(false)}>
           Кейсы
         </a>
-        <a className="mobile-menu_bottom_link" href="#blog">
+        <a className="mobile-menu_bottom_link" href="#blog" onClick={setMenuOpen(false)}>
           Блог
         </a>
-        <a className="mobile-menu_bottom_link" href="#faq">
+        <a className="mobile-menu_bottom_link" href="#faq" onClick={setMenuOpen(false)}>
           Контакты
         </a>
         <Button />
