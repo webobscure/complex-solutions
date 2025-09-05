@@ -17,14 +17,24 @@ export default function Header() {
             <img src={logo} alt="dlm-agency" />
           </div>
           <div className="header-container_item nav-links">
-            <a className="header-container_item-link" href="#about">О компании</a>
-            <a className="header-container_item-link" href="#services">Услуги</a>
-            <a className="header-container_item-link" href="#cases">Кейсы</a>
-            <a className="header-container_item-link" href="#blog">Блог</a>
-            <a className="header-container_item-link" href="#faq">Контакты</a>
+            <a className="header-container_item-link" href="#about">
+              О компании
+            </a>
+            <a className="header-container_item-link" href="#services">
+              Услуги
+            </a>
+            <a className="header-container_item-link" href="#cases">
+              Кейсы
+            </a>
+            <a className="header-container_item-link" href="#blog">
+              Блог
+            </a>
+            <a className="header-container_item-link" href="#faq">
+              Контакты
+            </a>
           </div>
           <div className="header-container_item">
-            <Button  />
+            <Button />
           </div>
         </section>
 
@@ -46,11 +56,21 @@ export default function Header() {
 
       {/* Выпадающее меню снизу */}
       <section className={`mobile-menu-bottom ${menuOpen ? "open" : ""}`}>
-        <a className="mobile-menu_bottom_link">О компании</a>
-        <a className="mobile-menu_bottom_link">Услуги</a>
-        <a className="mobile-menu_bottom_link" href="#cases">Кейсы</a>
-        <a className="mobile-menu_bottom_link" href="#blog">Блог</a>
-        <a className="mobile-menu_bottom_link">Контакты</a>
+        <a className="mobile-menu_bottom_link" href="#about">
+          О компании
+        </a>
+        <a className="mobile-menu_bottom_link" href="#services">
+          Услуги
+        </a>
+        <a className="mobile-menu_bottom_link" href="#cases">
+          Кейсы
+        </a>
+        <a className="mobile-menu_bottom_link" href="#blog">
+          Блог
+        </a>
+        <a className="mobile-menu_bottom_link" href="#faq">
+          Контакты
+        </a>
         <Button />
       </section>
     </header>
